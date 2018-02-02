@@ -8,8 +8,7 @@
 import Foundation
 
 public struct HSSegmentProperty {
-    
-    public var selectionIndicatorHeight: CGFloat = 2.5
+    public var indicatorHeight: CGFloat = 2.5
     public var originalX: CGFloat = 4
     public var buttonTextMargin: CGFloat = 5
     public var buttonMargin: CGFloat = 10
@@ -29,4 +28,8 @@ public struct HSSegmentProperty {
     public var isFontSizeAnimate: Bool = false
     public var isIndicatorFixWidth: Bool = false
     public var isLayoutEqual: Bool = false
+    
+    public init() {
+        
+    }
 }

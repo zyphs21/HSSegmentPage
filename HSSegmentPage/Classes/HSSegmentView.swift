@@ -52,7 +52,7 @@ public class HSSegmentView: UIControl {
     
     // MARK: - Initialize
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
@@ -62,7 +62,7 @@ public class HSSegmentView: UIControl {
         commonInit()
     }
     
-    convenience init(items: [String], property: HSSegmentProperty?) {
+    convenience public init(items: [String], property: HSSegmentProperty?) {
         self.init()
         
         self.items = items
@@ -166,7 +166,7 @@ public class HSSegmentView: UIControl {
                 self.layoutIndicator()
             }, completion: { _ in
                 previousButton?.titleLabel?.font = self.property.normalFont
-                currentButton?.titleLabel?.font = self.property.selectedFont
+                currentButton?.titleLabel?.font = self.property.normalFont
             })
             
         }
@@ -185,25 +185,25 @@ public class HSSegmentView: UIControl {
         if let button = selectedButton() {
             if property.isLayoutEqual {
                 let rect = CGRect(x: button.frame.minX,
-                                  y: bounds.height - property.selectionIndicatorHeight,
+                                  y: bounds.height - property.indicatorHeight,
                                   width: button.frame.width,
-                                  height: property.selectionIndicatorHeight)
+                                  height: property.indicatorHeight)
                 indicatorView.frame = rect
                 
             } else {
                 if property.isIndicatorFixWidth {
                     let gap = (button.frame.width - property.widthOfIndicator) / 2
                     var rect = CGRect(x: button.frame.minX + gap,
-                                      y: bounds.height - property.selectionIndicatorHeight - property.bottomGapOfIndicator,
+                                      y: bounds.height - property.indicatorHeight - property.bottomGapOfIndicator,
                                       width: property.widthOfIndicator,
-                                      height: property.selectionIndicatorHeight)
+                                      height: property.indicatorHeight)
                     if button.frame.width < property.widthOfIndicator {
-                        rect = CGRect(x: button.frame.minX, y: bounds.height - property.selectionIndicatorHeight - property.bottomGapOfIndicator, width: button.frame.width, height: property.selectionIndicatorHeight)
+                        rect = CGRect(x: button.frame.minX, y: bounds.height - property.indicatorHeight - property.bottomGapOfIndicator, width: button.frame.width, height: property.indicatorHeight)
                     }
                     indicatorView.frame = rect
                     
                 } else {
-                    let rect = CGRect(x: button.frame.minX, y: bounds.height - property.selectionIndicatorHeight - property.bottomGapOfIndicator, width: button.frame.width, height: property.selectionIndicatorHeight)
+                    let rect = CGRect(x: button.frame.minX, y: bounds.height - property.indicatorHeight - property.bottomGapOfIndicator, width: button.frame.width, height: property.indicatorHeight)
                     indicatorView.frame = rect
                 }
             }
@@ -226,7 +226,7 @@ public class HSSegmentView: UIControl {
                     button.sizeToFit()
                     let rect = CGRect(x: beginX, y: 0,
                                       width: width,
-                                      height: bounds.height - property.selectionIndicatorHeight)
+                                      height: bounds.height - property.indicatorHeight)
                     button.frame = rect
                     button.isSelected = (index == selectedSegmentIndex)
                     
@@ -243,7 +243,7 @@ public class HSSegmentView: UIControl {
                     button.sizeToFit()
                     let rect = CGRect(x: originX + property.buttonMargin, y: 0,
                                       width: property.buttonTextMargin*2 + button.frame.width,
-                                      height: bounds.height - property.selectionIndicatorHeight)
+                                      height: bounds.height - property.indicatorHeight)
                     
                     button.frame = rect
                     button.isSelected = (index == selectedSegmentIndex)
