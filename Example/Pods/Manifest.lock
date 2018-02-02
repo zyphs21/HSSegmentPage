@@ -1,0 +1,16 @@
+PODS:
+  - HSSegmentPage (0.1.0)
+
+DEPENDENCIES:
+  - HSSegmentPage (from `../`)
+
+EXTERNAL SOURCES:
+  HSSegmentPage:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HSSegmentPage: 2c8af338304e2f6935fce2bf5702229e11740e8a
+
+PODFILE CHECKSUM: 70630e6a788a6b8c04cf33bf7c9e068c7f7b82b3
+
+COCOAPODS: 1.4.0

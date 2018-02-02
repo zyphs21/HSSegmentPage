@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HSSegmentPage_Example' do
+  pod 'HSSegmentPage', :path => '../'
+
+  target 'HSSegmentPage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
