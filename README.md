@@ -1,10 +1,15 @@
 # HSSegmentPage
 
+![](https://raw.githubusercontent.com/zyphs21/HSSegmentPage/master/demo-1.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+- Swift 4
+- iOS 8.0 +
 
 ## Installation
 
