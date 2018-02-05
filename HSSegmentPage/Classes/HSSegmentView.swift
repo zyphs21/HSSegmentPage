@@ -27,28 +27,9 @@ public class HSSegmentView: UIControl {
     }
     
     var selectedSegmentIndex: Int = 0 {
-//        get { return _selectedSegmentIndex }
-//        set { setSelected(true, forSegmentAtIndex: newValue) }
-//        willSet {
-//            setSelected(true, forSegmentAtIndex: newValue)
-//        }
         didSet {
             setSelected(forSegmentAt: selectedSegmentIndex, previousIndex: oldValue)
         }
-    }
-    
-    
-    
-//    fileprivate var _selectedSegmentIndex = 0
-    
-    var isTopSeparatorHidden: Bool {
-        get { return separatorTopLine.isHidden }
-        set { separatorTopLine.isHidden = newValue }
-    }
-    
-    var isBottomSeparatorHidden: Bool {
-        get { return separatorLine.isHidden }
-        set { separatorLine.isHidden = newValue }
     }
     
     var defaltSelectedIndex: Int = 0
@@ -82,15 +63,29 @@ public class HSSegmentView: UIControl {
         insertAllSegments()
     }
     
-    
     fileprivate func commonInit() {
+        segmentsContainerView = UIScrollView(frame: bounds)
+        segmentsContainerView?.showsVerticalScrollIndicator = false
+        segmentsContainerView?.showsHorizontalScrollIndicator = false
+        segmentsContainerView?.backgroundColor = UIColor.clear
+        segmentsContainerView?.isScrollEnabled = property.isItemScrollEnabled
+        segmentsContainerView?.addSubview(indicatorView)
+        
         separatorTopLine.isHidden = true
         separatorTopLine.backgroundColor = UIColor.black.withAlphaComponent(0.1)
         separatorLine.backgroundColor = UIColor.black.withAlphaComponent(0.1)
+        
+        addSubview(segmentsContainerView!)
+        addSubview(separatorTopLine)
+        addSubview(separatorLine)
+//        self.sendSubview(toBack: segmentsContainerView!)
     }
-    
-    
-    // MARK: - Override function
+}
+
+
+// MARK: - Override function
+
+extension HSSegmentView {
     
     override open func layoutSubviews() {
         super.layoutSubviews()
@@ -116,9 +111,12 @@ public class HSSegmentView: UIControl {
         super.willMove(toSuperview: newSuperview)
         setColors()
     }
-    
-    
-    // MARK: - Open function
+}
+
+
+// MARK: - function
+
+extension HSSegmentView {
     
     func setSelected(forSegmentAt index: Int, previousIndex: Int) {
         guard 0 <= index, index < segmentsButtons.count, index != previousIndex else { return }
@@ -127,8 +125,6 @@ public class HSSegmentView: UIControl {
         
         let previousButton = buttonAtIndex(previousIndex)
         let currentButton = buttonAtIndex(index)
-        let isPreviousButtonShowAnimation = isButtonTitlePresentation(at: previousIndex)
-        let isCurrentButtonShowAnimation = isButtonTitlePresentation(at: index)
         
         previousButton?.isUserInteractionEnabled = true
         previousButton?.isSelected = false
@@ -145,24 +141,16 @@ public class HSSegmentView: UIControl {
                 }
             }
             
-            UIView.animate(withDuration: property.animationDuration,
-                           delay: 0,
-                           options: .beginFromCurrentState,
-                           animations: {
-                            self.layoutIndicator()
-                            if isPreviousButtonShowAnimation {
-                                previousButton?.transform = CGAffineTransform(scaleX: 1 / scale, y: 1 / scale)
-                            }
-                            if isCurrentButtonShowAnimation {
-                                currentButton?.transform = CGAffineTransform(scaleX: scale, y: scale)
-                            }
-            },
-                           completion: { _ in
-                            
-                            previousButton?.transform = CGAffineTransform.identity
-                            currentButton?.transform = CGAffineTransform.identity
-                            previousButton?.titleLabel?.font = (previousButton?.isSelected ?? true) ? self.property.selectedFont : self.property.normalFont
-                            currentButton?.titleLabel?.font = (currentButton?.isSelected ?? true) ? self.property.selectedFont : self.property.normalFont
+            UIView.animate(withDuration: property.animationDuration, delay: 0, options: .beginFromCurrentState, animations: {
+                self.layoutIndicator()
+                previousButton?.transform = CGAffineTransform(scaleX: 1 / scale, y: 1 / scale)
+                currentButton?.transform = CGAffineTransform(scaleX: scale, y: scale)
+                
+            }, completion: { _ in
+                previousButton?.transform = CGAffineTransform.identity
+                currentButton?.transform = CGAffineTransform.identity
+                previousButton?.titleLabel?.font = (previousButton?.isSelected ?? true) ? self.property.selectedFont : self.property.normalFont
+                currentButton?.titleLabel?.font = (currentButton?.isSelected ?? true) ? self.property.selectedFont : self.property.normalFont
             })
             
         } else {
@@ -177,80 +165,19 @@ public class HSSegmentView: UIControl {
         
         sendActions(for: .valueChanged)
     }
-    
-    open func setSelected(_ selected: Bool, forSegmentAtIndex index: Int) {
-        guard 0 <= index, index < segmentsButtons.count else { return }
-        
-        layoutSelectedOffset(at: index)
-        
-        if selectedSegmentIndex == index {
-            return
-        }
-        
-        let previousButton = buttonAtIndex(selectedSegmentIndex)
-        let currentButton = buttonAtIndex(index)
-        let isPreviousButtonShowAnimation = isButtonTitlePresentation(at: selectedSegmentIndex)
-        let isCurrentButtonShowAnimation = isButtonTitlePresentation(at: index)
-        
-        previousButton?.isUserInteractionEnabled = true
-        previousButton?.isSelected = false
-        
-        currentButton?.isSelected = true
-        currentButton?.isUserInteractionEnabled = false
-        
-//        _selectedSegmentIndex = index
-        
-        if property.isFontSizeAnimate {
-            var scale: CGFloat = 1
-            if let selectHeight = previousButton?.titleLabel?.bounds.height, let normalHeight = currentButton?.titleLabel?.bounds.height, let t = previousButton?.transform {
-                if normalHeight > 0 && selectHeight > 0 && t.a + t.c > 0 {
-                    //缩放大小 ＝ 选中的字体高度 * 仿射变换的缩放系数 / 未选中的字体高度
-                    scale = selectHeight * sqrt(t.a * t.a + t.c * t.c) / normalHeight
-                }
-            }
-            
-            UIView.animate(withDuration: property.animationDuration,
-                           delay: 0,
-                           options: .beginFromCurrentState,
-                           animations: {
-                            self.layoutIndicator()
-                            if isPreviousButtonShowAnimation {
-                                previousButton?.transform = CGAffineTransform(scaleX: 1 / scale, y: 1 / scale)
-                            }
-                            if isCurrentButtonShowAnimation {
-                                currentButton?.transform = CGAffineTransform(scaleX: scale, y: scale)
-                            }
-            },
-                           completion: { _ in
-                            
-                            previousButton?.transform = CGAffineTransform.identity
-                            currentButton?.transform = CGAffineTransform.identity
-                            previousButton?.titleLabel?.font = (previousButton?.isSelected ?? true) ? self.property.selectedFont : self.property.normalFont
-                            currentButton?.titleLabel?.font = (currentButton?.isSelected ?? true) ? self.property.selectedFont : self.property.normalFont
-            })
-            
-        } else {
-            UIView.animate(withDuration: property.animationDuration, delay: 0, options: .beginFromCurrentState, animations: {
-                self.layoutIndicator()
-            }, completion: { _ in
-                previousButton?.titleLabel?.font = self.property.normalFont
-                currentButton?.titleLabel?.font = self.property.normalFont
-            })
-            
-        }
-        
-        sendActions(for: .valueChanged)
-    }
-    
-    
-    // MARK: - Private Methods
+}
+
+
+// MARK: - Private Methods
+
+extension HSSegmentView {
     
     fileprivate func setColors() {
         indicatorView.backgroundColor = property.segmentSelectedColor
     }
     
     fileprivate func layoutIndicator() {
-        if let button = selectedButton() {
+        if let button = buttonAtIndex(selectedSegmentIndex) {
             if property.isLayoutEqual {
                 let rect = CGRect(x: button.frame.minX,
                                   y: bounds.height - property.indicatorHeight,
@@ -356,48 +283,6 @@ public class HSSegmentView: UIControl {
         segmentsContainerView.setContentOffset(point, animated: true)
     }
     
-    fileprivate func insertAllSegments() {
-        for index in 0..<items.count {
-            addButtonForSegment(index)
-        }
-        setNeedsLayout()
-    }
-    
-    fileprivate func removeAllSegments() {
-        segmentsButtons.forEach { $0.removeFromSuperview() }
-        segmentsButtons.removeAll(keepingCapacity: true)
-    }
-    
-    fileprivate func addButtonForSegment(_ index: Int) {
-        let button = UIButton(type:.custom)
-        button.addTarget(self, action: #selector(willSelected(_:)), for: .touchDown)
-        button.addTarget(self, action: #selector(didSelected(_:)), for: .touchUpInside)
-        button.backgroundColor = nil
-        button.clipsToBounds = true
-        button.adjustsImageWhenDisabled = false
-        button.adjustsImageWhenHighlighted = false
-        button.isExclusiveTouch = true
-        button.tag = index
-        
-        if segmentsContainerView == nil {
-            segmentsContainerView = UIScrollView(frame: bounds)
-            segmentsContainerView?.showsVerticalScrollIndicator = false
-            segmentsContainerView?.showsHorizontalScrollIndicator = false
-            segmentsContainerView?.backgroundColor = UIColor.clear
-            segmentsContainerView?.isScrollEnabled = property.isItemScrollEnabled
-            addSubview(segmentsContainerView!)
-            
-            self.sendSubview(toBack: segmentsContainerView!)
-            
-            addSubview(separatorTopLine)
-            addSubview(separatorLine)
-            segmentsContainerView?.addSubview(indicatorView)
-        }
-        
-        segmentsButtons.append(button)
-        segmentsContainerView?.addSubview(button)
-    }
-    
     fileprivate func buttonAtIndex(_ index: Int) -> UIButton? {
         if 0 <= index && index < segmentsButtons.count {
             return segmentsButtons[index]
@@ -405,35 +290,18 @@ public class HSSegmentView: UIControl {
         return nil
     }
     
-    fileprivate func selectedButton() -> UIButton? {
-        return buttonAtIndex(selectedSegmentIndex)
-    }
-    
-    fileprivate func titleForSegmentAtIndex(_ index: Int) -> String? {
-        guard 0 <= index && index < items.count else { return nil }
-        return items[index]
-    }
-    
-    fileprivate func isButtonTitlePresentation(at position: Int) -> Bool {
-        guard 0 <= position && position < items.count else { return false }
-        return true
-    }
-    
     fileprivate func configureSegments() {
         for button in segmentsButtons {
             let segment = button.tag
-            assert(segment >= 0, "segment index must greater than 0")
-            assert(segment < numberOfSegments, "segment button must exist")
+            guard segment >= 0 && segment < items.count else { return }
             
             let font = segment == selectedSegmentIndex ? property.selectedFont : property.normalFont
             setFont(font, forSegmentAtIndex: segment)
             
-            if let title = titleForSegmentAtIndex(segment) {
-                setTitle(title, forSegmentAtIndex: segment)
-                setTitleColor(titleColorForButtonState(UIControlState()), forState: UIControlState())
-                setTitleColor(titleColorForButtonState(.highlighted), forState: .highlighted)
-                setTitleColor(titleColorForButtonState(.selected), forState: .selected)
-            }
+            setTitle(items[segment], forSegmentAtIndex: segment)
+            setTitleColor(titleColorForButtonState(UIControlState()), forState: UIControlState())
+            setTitleColor(titleColorForButtonState(.highlighted), forState: .highlighted)
+            setTitleColor(titleColorForButtonState(.selected), forState: .selected)
         }
     }
     
@@ -464,9 +332,42 @@ public class HSSegmentView: UIControl {
         default:                        return property.segmentSelectedColor
         }
     }
+}
+
+
+extension HSSegmentView {
     
+    fileprivate func insertAllSegments() {
+        for index in 0..<items.count {
+            addButtonForSegment(index)
+        }
+        setNeedsLayout()
+    }
     
-    // MARK: - Segment Actions
+    fileprivate func removeAllSegments() {
+        segmentsButtons.forEach { $0.removeFromSuperview() }
+        segmentsButtons.removeAll(keepingCapacity: true)
+    }
+    
+    fileprivate func addButtonForSegment(_ index: Int) {
+        let button = UIButton(type:.custom)
+        button.addTarget(self, action: #selector(willSelected(_:)), for: .touchDown)
+        button.addTarget(self, action: #selector(didSelected(_:)), for: .touchUpInside)
+        button.backgroundColor = nil
+        button.clipsToBounds = true
+        button.adjustsImageWhenDisabled = false
+        button.adjustsImageWhenHighlighted = false
+        button.isExclusiveTouch = true
+        button.tag = index
+        segmentsButtons.append(button)
+        segmentsContainerView?.addSubview(button)
+    }
+}
+
+
+// MARK: - Segment Actions
+
+extension HSSegmentView {
     
     @objc fileprivate func willSelected(_ sender: UIButton) {
         
