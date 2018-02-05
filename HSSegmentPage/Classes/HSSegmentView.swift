@@ -26,10 +26,20 @@ public class HSSegmentView: UIControl {
         return items.count
     }
     
-    var selectedSegmentIndex: Int {
-        get { return _selectedSegmentIndex }
-        set { setSelected(true, forSegmentAtIndex: newValue) }
+    var selectedSegmentIndex: Int = 0 {
+//        get { return _selectedSegmentIndex }
+//        set { setSelected(true, forSegmentAtIndex: newValue) }
+//        willSet {
+//            setSelected(true, forSegmentAtIndex: newValue)
+//        }
+        didSet {
+            setSelected(forSegmentAt: selectedSegmentIndex, previousIndex: oldValue)
+        }
     }
+    
+    
+    
+//    fileprivate var _selectedSegmentIndex = 0
     
     var isTopSeparatorHidden: Bool {
         get { return separatorTopLine.isHidden }
@@ -42,7 +52,7 @@ public class HSSegmentView: UIControl {
     }
     
     var defaltSelectedIndex: Int = 0
-    fileprivate var _selectedSegmentIndex = 0
+    
     fileprivate var segmentsButtons: [UIButton] = []
     fileprivate(set) var segmentsContainerView: UIScrollView?
     fileprivate var indicatorView = UIView()
@@ -110,6 +120,64 @@ public class HSSegmentView: UIControl {
     
     // MARK: - Open function
     
+    func setSelected(forSegmentAt index: Int, previousIndex: Int) {
+        guard 0 <= index, index < segmentsButtons.count, index != previousIndex else { return }
+        
+        layoutSelectedOffset(at: index)
+        
+        let previousButton = buttonAtIndex(previousIndex)
+        let currentButton = buttonAtIndex(index)
+        let isPreviousButtonShowAnimation = isButtonTitlePresentation(at: previousIndex)
+        let isCurrentButtonShowAnimation = isButtonTitlePresentation(at: index)
+        
+        previousButton?.isUserInteractionEnabled = true
+        previousButton?.isSelected = false
+        
+        currentButton?.isSelected = true
+        currentButton?.isUserInteractionEnabled = false
+        
+        if property.isFontSizeAnimate {
+            var scale: CGFloat = 1
+            if let selectHeight = previousButton?.titleLabel?.bounds.height, let normalHeight = currentButton?.titleLabel?.bounds.height, let t = previousButton?.transform {
+                if normalHeight > 0 && selectHeight > 0 && t.a + t.c > 0 {
+                    //缩放大小 ＝ 选中的字体高度 * 仿射变换的缩放系数 / 未选中的字体高度
+                    scale = selectHeight * sqrt(t.a * t.a + t.c * t.c) / normalHeight
+                }
+            }
+            
+            UIView.animate(withDuration: property.animationDuration,
+                           delay: 0,
+                           options: .beginFromCurrentState,
+                           animations: {
+                            self.layoutIndicator()
+                            if isPreviousButtonShowAnimation {
+                                previousButton?.transform = CGAffineTransform(scaleX: 1 / scale, y: 1 / scale)
+                            }
+                            if isCurrentButtonShowAnimation {
+                                currentButton?.transform = CGAffineTransform(scaleX: scale, y: scale)
+                            }
+            },
+                           completion: { _ in
+                            
+                            previousButton?.transform = CGAffineTransform.identity
+                            currentButton?.transform = CGAffineTransform.identity
+                            previousButton?.titleLabel?.font = (previousButton?.isSelected ?? true) ? self.property.selectedFont : self.property.normalFont
+                            currentButton?.titleLabel?.font = (currentButton?.isSelected ?? true) ? self.property.selectedFont : self.property.normalFont
+            })
+            
+        } else {
+            UIView.animate(withDuration: property.animationDuration, delay: 0, options: .beginFromCurrentState, animations: {
+                self.layoutIndicator()
+            }, completion: { _ in
+                previousButton?.titleLabel?.font = self.property.normalFont
+                currentButton?.titleLabel?.font = self.property.normalFont
+            })
+            
+        }
+        
+        sendActions(for: .valueChanged)
+    }
+    
     open func setSelected(_ selected: Bool, forSegmentAtIndex index: Int) {
         guard 0 <= index, index < segmentsButtons.count else { return }
         
@@ -130,7 +198,7 @@ public class HSSegmentView: UIControl {
         currentButton?.isSelected = true
         currentButton?.isUserInteractionEnabled = false
         
-        _selectedSegmentIndex = index
+//        _selectedSegmentIndex = index
         
         if property.isFontSizeAnimate {
             var scale: CGFloat = 1
