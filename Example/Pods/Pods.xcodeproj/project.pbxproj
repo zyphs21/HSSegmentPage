@@ -8,17 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1F114C307CA7A714F20E1589C9D8AB8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		31B9733681037B23E5AF54EA5DA68267 /* Pods-HSSegmentPage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DDD65D3B2C2E5298450072A82D8A2C8 /* Pods-HSSegmentPage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3832A4580FD1A72210145CC94AC9B709 /* Pods-HSSegmentPage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F867869340FF1D3D451C6FB915609C27 /* Pods-HSSegmentPage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E3D440A489C7AAAC99069024D78A9D6 /* HSSegmentPage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4165B8F9ED29258B8348CB9D642D397D /* HSSegmentPage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9716BE7BBBC841B2280446B75C7C24E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A5405D717DD06C83D3CA81530A01F29E /* Pods-HSSegmentPage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28134584F661D95D3E5EDFD491AE9621 /* Pods-HSSegmentPage_Tests-dummy.m */; };
-		A83226A529DB15F207F604AFE92BEEC7 /* HSSegmentPage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E88FB8D05610A09BD710BCC2A071E0 /* HSSegmentPage-dummy.m */; };
-		A9B5CA63C8D3925C935AB1506EB0B778 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C05EAC7320245D8A008E463D /* HSSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EAC7220245D8A008E463D /* HSSegmentView.swift */; };
-		C05EAC7520245E53008E463D /* HSSegmentProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EAC7420245E53008E463D /* HSSegmentProperty.swift */; };
-		C0975B3A20282C4B001DF3DA /* HSSegmentPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0975B3920282C4B001DF3DA /* HSSegmentPageView.swift */; };
-		FEF5EB0EA6AFE8C6B356D87C6C722B5F /* Pods-HSSegmentPage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32112C7026CB3322BD81F6A59937FB89 /* Pods-HSSegmentPage_Example-dummy.m */; };
+		27BB7FD351E697497A545B24FA76DA3D /* HSSegmentProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB73E8A444320CBA74923D0EB626BB /* HSSegmentProperty.swift */; };
+		31B9733681037B23E5AF54EA5DA68267 /* Pods-HSSegmentPage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 460E6DB37E0192B185AE4BE9810D9776 /* Pods-HSSegmentPage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45126985DD4EF5A1D9054DE6C6386D09 /* HSSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3FE5D26619DE32E89A19CB0BB3AE0 /* HSSegmentView.swift */; };
+		A03B3A90C59C4B1308FCDB084A032D8F /* HSSegmentPage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF024C91974D577042A5D14EFF25A64 /* HSSegmentPage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8937F1AF96E5B794E5E277FDEEFED8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CB6D096DEBEF965E22118DEE2F5347D9 /* HSSegmentPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACEF5C6FA555691017341B86FC2857C /* HSSegmentPageView.swift */; };
+		E89CD6EC6AC8A741B341A8551D888DF6 /* HSSegmentPage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B18210AEE9B142BE804C35F2B48C595B /* HSSegmentPage-dummy.m */; };
+		FEF5EB0EA6AFE8C6B356D87C6C722B5F /* Pods-HSSegmentPage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8E3FBC1BE65A548A844149E9CACCB /* Pods-HSSegmentPage_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,52 +23,49 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8F41577ADAEDD7DE846009D7EA79CB9A;
+			remoteGlobalIDString = 445D154463D15720F84356C7E975625D;
 			remoteInfo = HSSegmentPage;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07017DBB69CC155DE21D5A3DA3C82943 /* HSSegmentPage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HSSegmentPage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0DB53DD148D3A9A3BB5B5B28CB2F822E /* HSSegmentPage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HSSegmentPage.modulemap; sourceTree = "<group>"; };
-		18F49369C0EB4D9FEB3625AF42E76B1C /* Pods-HSSegmentPage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HSSegmentPage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		192B17A8683A10FC11E1AF0039EFFE00 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		22543D1227F3A9C103E796BD2D0AF2E8 /* Pods-HSSegmentPage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSSegmentPage_Example-frameworks.sh"; sourceTree = "<group>"; };
-		267F5EC9CCBF03D28F4B7D8F84183DD3 /* Pods-HSSegmentPage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSSegmentPage_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		28134584F661D95D3E5EDFD491AE9621 /* Pods-HSSegmentPage_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSSegmentPage_Tests-dummy.m"; sourceTree = "<group>"; };
-		3139B427810A2F7AE5582D5CDBC490F3 /* Pods_HSSegmentPage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSSegmentPage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		32112C7026CB3322BD81F6A59937FB89 /* Pods-HSSegmentPage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSSegmentPage_Example-dummy.m"; sourceTree = "<group>"; };
-		4165B8F9ED29258B8348CB9D642D397D /* HSSegmentPage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSSegmentPage-umbrella.h"; sourceTree = "<group>"; };
-		4F85CE77B67F87B26B7B0182EA998562 /* Pods-HSSegmentPage_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSSegmentPage_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		539F12328DE84A65D2A1B262DAF87B88 /* Pods-HSSegmentPage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSSegmentPage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		346CE8B64DBBF0ED17CDBAB656A863C4 /* HSSegmentPage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = HSSegmentPage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3FB8E3FBC1BE65A548A844149E9CACCB /* Pods-HSSegmentPage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSSegmentPage_Example-dummy.m"; sourceTree = "<group>"; };
+		411E0D0358878B013CF0FC6454509199 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		460E6DB37E0192B185AE4BE9810D9776 /* Pods-HSSegmentPage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HSSegmentPage_Example-umbrella.h"; sourceTree = "<group>"; };
+		49A3FE5D26619DE32E89A19CB0BB3AE0 /* HSSegmentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSSegmentView.swift; path = HSSegmentPage/Classes/HSSegmentView.swift; sourceTree = "<group>"; };
+		5131F432DA707376DFD1BD8D35AFC8D0 /* Pods-HSSegmentPage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSSegmentPage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5550C314A8096F42FF8280987873DB33 /* Pods-HSSegmentPage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSSegmentPage_Example-resources.sh"; sourceTree = "<group>"; };
+		654B495F603355719283D89A28E749EB /* HSSegmentPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HSSegmentPage.framework; path = HSSegmentPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6DDD65D3B2C2E5298450072A82D8A2C8 /* Pods-HSSegmentPage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HSSegmentPage_Example-umbrella.h"; sourceTree = "<group>"; };
-		6EC02E107826F834F5E815D8AB51D110 /* HSSegmentPage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSSegmentPage.xcconfig; sourceTree = "<group>"; };
-		7346CBE96F054D7FA1E32B91045EAB12 /* HSSegmentPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSSegmentPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83E8D83402DC5987F0F1D56054329766 /* Pods_HSSegmentPage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSSegmentPage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8801E0D93A1814F0142271BF2EB802A0 /* Pods-HSSegmentPage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSSegmentPage_Example-resources.sh"; sourceTree = "<group>"; };
-		8839119AE2DF432AB77174E95C875CE7 /* Pods-HSSegmentPage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSSegmentPage_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8B68A330113E3829210F2AF1ECD9917E /* Pods-HSSegmentPage_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HSSegmentPage_Tests.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FD8CCBBEBEF044790F858F516F93D18 /* Pods-HSSegmentPage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HSSegmentPage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A475758C7A75164FBC4746386EF9EB77 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		AAE45AF1E0D36DF55CA8768688A70C97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B66995D1E547485B862025EB7932CDF2 /* Pods-HSSegmentPage_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSSegmentPage_Tests-resources.sh"; sourceTree = "<group>"; };
-		C05EAC7220245D8A008E463D /* HSSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSSegmentView.swift; sourceTree = "<group>"; };
-		C05EAC7420245E53008E463D /* HSSegmentProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSSegmentProperty.swift; sourceTree = "<group>"; };
-		C0975B3920282C4B001DF3DA /* HSSegmentPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSSegmentPageView.swift; sourceTree = "<group>"; };
-		D0E88FB8D05610A09BD710BCC2A071E0 /* HSSegmentPage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSSegmentPage-dummy.m"; sourceTree = "<group>"; };
-		D1C815FEF573D01D1EA369CDC503910C /* Pods-HSSegmentPage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HSSegmentPage_Example.modulemap"; sourceTree = "<group>"; };
-		D336B6871BA968F092113E868099E08B /* Pods-HSSegmentPage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSSegmentPage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D655BADA3FBACBC6093EB00249F34672 /* Pods-HSSegmentPage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSSegmentPage_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E7933F23AD33CF589FD1A4A99A462D36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F72B3592ED8F25675EE6D93FD163AD3A /* Pods-HSSegmentPage_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSSegmentPage_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F867869340FF1D3D451C6FB915609C27 /* Pods-HSSegmentPage_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HSSegmentPage_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F926C87D09042A9004CDB20B9D48D572 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEA13EB9F1B8768629E6ED4C83C74FE6 /* HSSegmentPage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSSegmentPage-prefix.pch"; sourceTree = "<group>"; };
+		7178E9D7A44E924E65303B162BDBF6BD /* Pods-HSSegmentPage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSSegmentPage_Example.release.xcconfig"; sourceTree = "<group>"; };
+		79B96123F062C30DBA42FBF71E2A9FDD /* HSSegmentPage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSSegmentPage-prefix.pch"; sourceTree = "<group>"; };
+		79CB73E8A444320CBA74923D0EB626BB /* HSSegmentProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSSegmentProperty.swift; path = HSSegmentPage/Classes/HSSegmentProperty.swift; sourceTree = "<group>"; };
+		889AA30A460265BBA54546CE1D627C21 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ACEF5C6FA555691017341B86FC2857C /* HSSegmentPageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSSegmentPageView.swift; path = HSSegmentPage/Classes/HSSegmentPageView.swift; sourceTree = "<group>"; };
+		9FF024C91974D577042A5D14EFF25A64 /* HSSegmentPage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSSegmentPage-umbrella.h"; sourceTree = "<group>"; };
+		A7DE759ED3AD0369FE7315D002AC8E73 /* Pods-HSSegmentPage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSSegmentPage_Example-frameworks.sh"; sourceTree = "<group>"; };
+		AD15BB45A087777AC6DFFD3D22DA4C30 /* HSSegmentPage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSSegmentPage.xcconfig; sourceTree = "<group>"; };
+		B0B9A9529AFD94535CA2F45120055F9B /* Pods-HSSegmentPage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSSegmentPage_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B18210AEE9B142BE804C35F2B48C595B /* HSSegmentPage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSSegmentPage-dummy.m"; sourceTree = "<group>"; };
+		BAA915503560DA1112562A9C802149D9 /* HSSegmentPage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HSSegmentPage.modulemap; sourceTree = "<group>"; };
+		C18A90FB7B39DC0083FD7BE0337314EF /* Pods-HSSegmentPage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HSSegmentPage_Example.modulemap"; sourceTree = "<group>"; };
+		CA0C6968141C2ED6CCE9D206ECB5C6DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DE6C232F43FFAAD8949B65BCD14CA710 /* Pods_HSSegmentPage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HSSegmentPage_Example.framework; path = "Pods-HSSegmentPage_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E534551CA3665C97CD1237B364221AD9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F2A2616A3772E66040042CEE0DF18B35 /* Pods-HSSegmentPage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HSSegmentPage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		45FFAC9C6182319865434C9A2243DDFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8937F1AF96E5B794E5E277FDEEFED8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		506683DB7563AC1E7F4D974FA464BFFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,114 +74,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FBDD3422025BE4F9D8C6F69029F5262 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9B5CA63C8D3925C935AB1506EB0B778 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B67E9A7CD54EBCE5A643A1392AE45E0D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9716BE7BBBC841B2280446B75C7C24E0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2AFEDDA4B56EE1CFAA9F26E05ED81B23 /* Support Files */ = {
+		588CD38B61888ACF3E6675F8D91B77DA /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0DB53DD148D3A9A3BB5B5B28CB2F822E /* HSSegmentPage.modulemap */,
-				6EC02E107826F834F5E815D8AB51D110 /* HSSegmentPage.xcconfig */,
-				D0E88FB8D05610A09BD710BCC2A071E0 /* HSSegmentPage-dummy.m */,
-				FEA13EB9F1B8768629E6ED4C83C74FE6 /* HSSegmentPage-prefix.pch */,
-				4165B8F9ED29258B8348CB9D642D397D /* HSSegmentPage-umbrella.h */,
-				AAE45AF1E0D36DF55CA8768688A70C97 /* Info.plist */,
+				346CE8B64DBBF0ED17CDBAB656A863C4 /* HSSegmentPage.podspec */,
+				E534551CA3665C97CD1237B364221AD9 /* LICENSE */,
+				CA0C6968141C2ED6CCE9D206ECB5C6DE /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HSSegmentPage";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		41FABAA47B93C7D63274284A3FD693B9 /* HSSegmentPage */ = {
+		698446BC788426F72A9A2132828F87EC /* HSSegmentPage */ = {
 			isa = PBXGroup;
 			children = (
-				C05EAC7020245D60008E463D /* Classes */,
-				ED9EB34DE87522C69C553A2BD65A1E06 /* Pod */,
-				2AFEDDA4B56EE1CFAA9F26E05ED81B23 /* Support Files */,
+				9ACEF5C6FA555691017341B86FC2857C /* HSSegmentPageView.swift */,
+				79CB73E8A444320CBA74923D0EB626BB /* HSSegmentProperty.swift */,
+				49A3FE5D26619DE32E89A19CB0BB3AE0 /* HSSegmentView.swift */,
+				588CD38B61888ACF3E6675F8D91B77DA /* Pod */,
+				72746B1522552D2F331B9E05EFE903C0 /* Support Files */,
 			);
 			name = HSSegmentPage;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		49D8D64F8B9FFFEF33015FAA60F995E9 /* Pods-HSSegmentPage_Example */ = {
+		72746B1522552D2F331B9E05EFE903C0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E7933F23AD33CF589FD1A4A99A462D36 /* Info.plist */,
-				D1C815FEF573D01D1EA369CDC503910C /* Pods-HSSegmentPage_Example.modulemap */,
-				9FD8CCBBEBEF044790F858F516F93D18 /* Pods-HSSegmentPage_Example-acknowledgements.markdown */,
-				539F12328DE84A65D2A1B262DAF87B88 /* Pods-HSSegmentPage_Example-acknowledgements.plist */,
-				32112C7026CB3322BD81F6A59937FB89 /* Pods-HSSegmentPage_Example-dummy.m */,
-				22543D1227F3A9C103E796BD2D0AF2E8 /* Pods-HSSegmentPage_Example-frameworks.sh */,
-				8801E0D93A1814F0142271BF2EB802A0 /* Pods-HSSegmentPage_Example-resources.sh */,
-				6DDD65D3B2C2E5298450072A82D8A2C8 /* Pods-HSSegmentPage_Example-umbrella.h */,
-				267F5EC9CCBF03D28F4B7D8F84183DD3 /* Pods-HSSegmentPage_Example.debug.xcconfig */,
-				8839119AE2DF432AB77174E95C875CE7 /* Pods-HSSegmentPage_Example.release.xcconfig */,
+				BAA915503560DA1112562A9C802149D9 /* HSSegmentPage.modulemap */,
+				AD15BB45A087777AC6DFFD3D22DA4C30 /* HSSegmentPage.xcconfig */,
+				B18210AEE9B142BE804C35F2B48C595B /* HSSegmentPage-dummy.m */,
+				79B96123F062C30DBA42FBF71E2A9FDD /* HSSegmentPage-prefix.pch */,
+				9FF024C91974D577042A5D14EFF25A64 /* HSSegmentPage-umbrella.h */,
+				889AA30A460265BBA54546CE1D627C21 /* Info.plist */,
 			);
-			name = "Pods-HSSegmentPage_Example";
-			path = "Target Support Files/Pods-HSSegmentPage_Example";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HSSegmentPage";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				CAE142A7FD0A83789288F1716B16837B /* Development Pods */,
+				D68030AB14DBE52EDDC68997BF5AB2C0 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9358B6F797048324C155ADD030CBBA09 /* Products */,
-				ABEC837337D1221E5539A76FEDBC06A7 /* Targets Support Files */,
+				8F6922EB702CCDAB40AB43FF9F282E3E /* Products */,
+				8ABF18DD4C1C354562E4E0E2D42784AD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9358B6F797048324C155ADD030CBBA09 /* Products */ = {
+		8ABF18DD4C1C354562E4E0E2D42784AD /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7346CBE96F054D7FA1E32B91045EAB12 /* HSSegmentPage.framework */,
-				83E8D83402DC5987F0F1D56054329766 /* Pods_HSSegmentPage_Example.framework */,
-				3139B427810A2F7AE5582D5CDBC490F3 /* Pods_HSSegmentPage_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A717BC163978E201CAC65B3D08A0F309 /* Pods-HSSegmentPage_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				F926C87D09042A9004CDB20B9D48D572 /* Info.plist */,
-				8B68A330113E3829210F2AF1ECD9917E /* Pods-HSSegmentPage_Tests.modulemap */,
-				18F49369C0EB4D9FEB3625AF42E76B1C /* Pods-HSSegmentPage_Tests-acknowledgements.markdown */,
-				4F85CE77B67F87B26B7B0182EA998562 /* Pods-HSSegmentPage_Tests-acknowledgements.plist */,
-				28134584F661D95D3E5EDFD491AE9621 /* Pods-HSSegmentPage_Tests-dummy.m */,
-				F72B3592ED8F25675EE6D93FD163AD3A /* Pods-HSSegmentPage_Tests-frameworks.sh */,
-				B66995D1E547485B862025EB7932CDF2 /* Pods-HSSegmentPage_Tests-resources.sh */,
-				F867869340FF1D3D451C6FB915609C27 /* Pods-HSSegmentPage_Tests-umbrella.h */,
-				D336B6871BA968F092113E868099E08B /* Pods-HSSegmentPage_Tests.debug.xcconfig */,
-				D655BADA3FBACBC6093EB00249F34672 /* Pods-HSSegmentPage_Tests.release.xcconfig */,
-			);
-			name = "Pods-HSSegmentPage_Tests";
-			path = "Target Support Files/Pods-HSSegmentPage_Tests";
-			sourceTree = "<group>";
-		};
-		ABEC837337D1221E5539A76FEDBC06A7 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				49D8D64F8B9FFFEF33015FAA60F995E9 /* Pods-HSSegmentPage_Example */,
-				A717BC163978E201CAC65B3D08A0F309 /* Pods-HSSegmentPage_Tests */,
+				C6E7E4D26BAACD32F5A54DFA9CCA7791 /* Pods-HSSegmentPage_Example */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8F6922EB702CCDAB40AB43FF9F282E3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				654B495F603355719283D89A28E749EB /* HSSegmentPage.framework */,
+				DE6C232F43FFAAD8949B65BCD14CA710 /* Pods_HSSegmentPage_Example.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -198,23 +150,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C05EAC7020245D60008E463D /* Classes */ = {
+		C6E7E4D26BAACD32F5A54DFA9CCA7791 /* Pods-HSSegmentPage_Example */ = {
 			isa = PBXGroup;
 			children = (
-				C05EAC7220245D8A008E463D /* HSSegmentView.swift */,
-				C05EAC7420245E53008E463D /* HSSegmentProperty.swift */,
-				C0975B3920282C4B001DF3DA /* HSSegmentPageView.swift */,
+				411E0D0358878B013CF0FC6454509199 /* Info.plist */,
+				C18A90FB7B39DC0083FD7BE0337314EF /* Pods-HSSegmentPage_Example.modulemap */,
+				F2A2616A3772E66040042CEE0DF18B35 /* Pods-HSSegmentPage_Example-acknowledgements.markdown */,
+				5131F432DA707376DFD1BD8D35AFC8D0 /* Pods-HSSegmentPage_Example-acknowledgements.plist */,
+				3FB8E3FBC1BE65A548A844149E9CACCB /* Pods-HSSegmentPage_Example-dummy.m */,
+				A7DE759ED3AD0369FE7315D002AC8E73 /* Pods-HSSegmentPage_Example-frameworks.sh */,
+				5550C314A8096F42FF8280987873DB33 /* Pods-HSSegmentPage_Example-resources.sh */,
+				460E6DB37E0192B185AE4BE9810D9776 /* Pods-HSSegmentPage_Example-umbrella.h */,
+				B0B9A9529AFD94535CA2F45120055F9B /* Pods-HSSegmentPage_Example.debug.xcconfig */,
+				7178E9D7A44E924E65303B162BDBF6BD /* Pods-HSSegmentPage_Example.release.xcconfig */,
 			);
-			name = Classes;
-			path = HSSegmentPage/Classes;
-			sourceTree = "<group>";
-		};
-		CAE142A7FD0A83789288F1716B16837B /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				41FABAA47B93C7D63274284A3FD693B9 /* HSSegmentPage */,
-			);
-			name = "Development Pods";
+			name = "Pods-HSSegmentPage_Example";
+			path = "Target Support Files/Pods-HSSegmentPage_Example";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -225,14 +176,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		ED9EB34DE87522C69C553A2BD65A1E06 /* Pod */ = {
+		D68030AB14DBE52EDDC68997BF5AB2C0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				07017DBB69CC155DE21D5A3DA3C82943 /* HSSegmentPage.podspec */,
-				192B17A8683A10FC11E1AF0039EFFE00 /* LICENSE */,
-				A475758C7A75164FBC4746386EF9EB77 /* README.md */,
+				698446BC788426F72A9A2132828F87EC /* HSSegmentPage */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,32 +195,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3C5119A6C9577AAF3C32CD8599A97B8 /* Headers */ = {
+		E5FDBC16282D90B8594F080463B6831C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E3D440A489C7AAAC99069024D78A9D6 /* HSSegmentPage-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F43B972607F2D23E64C5D466784029C4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3832A4580FD1A72210145CC94AC9B709 /* Pods-HSSegmentPage_Tests-umbrella.h in Headers */,
+				A03B3A90C59C4B1308FCDB084A032D8F /* HSSegmentPage-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8F41577ADAEDD7DE846009D7EA79CB9A /* HSSegmentPage */ = {
+		445D154463D15720F84356C7E975625D /* HSSegmentPage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0A356F23D91F14B474F864DB8D4C4BA /* Build configuration list for PBXNativeTarget "HSSegmentPage" */;
+			buildConfigurationList = 7BE72D77456394427E4F5D36E74B1A91 /* Build configuration list for PBXNativeTarget "HSSegmentPage" */;
 			buildPhases = (
-				A45840C376F0D6484E7CBD81119166D0 /* Sources */,
-				B67E9A7CD54EBCE5A643A1392AE45E0D /* Frameworks */,
-				C3C5119A6C9577AAF3C32CD8599A97B8 /* Headers */,
+				D6E20295AAECE3886F2D76C5821B1A3C /* Sources */,
+				45FFAC9C6182319865434C9A2243DDFF /* Frameworks */,
+				E5FDBC16282D90B8594F080463B6831C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -279,7 +220,7 @@
 			);
 			name = HSSegmentPage;
 			productName = HSSegmentPage;
-			productReference = 7346CBE96F054D7FA1E32B91045EAB12 /* HSSegmentPage.framework */;
+			productReference = 654B495F603355719283D89A28E749EB /* HSSegmentPage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B73C45E39D88717114C4E944C9BC4928 /* Pods-HSSegmentPage_Example */ = {
@@ -297,24 +238,7 @@
 			);
 			name = "Pods-HSSegmentPage_Example";
 			productName = "Pods-HSSegmentPage_Example";
-			productReference = 83E8D83402DC5987F0F1D56054329766 /* Pods_HSSegmentPage_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FCE105D70B9F90854AD3C2943B609938 /* Pods-HSSegmentPage_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A904C1DF94FA561000BE98E8EC72FCE6 /* Build configuration list for PBXNativeTarget "Pods-HSSegmentPage_Tests" */;
-			buildPhases = (
-				90A18D4DBBE0DF500EDB884171DAAFCB /* Sources */,
-				9FBDD3422025BE4F9D8C6F69029F5262 /* Frameworks */,
-				F43B972607F2D23E64C5D466784029C4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-HSSegmentPage_Tests";
-			productName = "Pods-HSSegmentPage_Tests";
-			productReference = 3139B427810A2F7AE5582D5CDBC490F3 /* Pods_HSSegmentPage_Tests.framework */;
+			productReference = DE6C232F43FFAAD8949B65BCD14CA710 /* Pods_HSSegmentPage_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -325,11 +249,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					8F41577ADAEDD7DE846009D7EA79CB9A = {
-						LastSwiftMigration = 0920;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -339,13 +258,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9358B6F797048324C155ADD030CBBA09 /* Products */;
+			productRefGroup = 8F6922EB702CCDAB40AB43FF9F282E3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F41577ADAEDD7DE846009D7EA79CB9A /* HSSegmentPage */,
+				445D154463D15720F84356C7E975625D /* HSSegmentPage */,
 				B73C45E39D88717114C4E944C9BC4928 /* Pods-HSSegmentPage_Example */,
-				FCE105D70B9F90854AD3C2943B609938 /* Pods-HSSegmentPage_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -359,22 +277,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90A18D4DBBE0DF500EDB884171DAAFCB /* Sources */ = {
+		D6E20295AAECE3886F2D76C5821B1A3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5405D717DD06C83D3CA81530A01F29E /* Pods-HSSegmentPage_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A45840C376F0D6484E7CBD81119166D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0975B3A20282C4B001DF3DA /* HSSegmentPageView.swift in Sources */,
-				C05EAC7520245E53008E463D /* HSSegmentProperty.swift in Sources */,
-				C05EAC7320245D8A008E463D /* HSSegmentView.swift in Sources */,
-				A83226A529DB15F207F604AFE92BEEC7 /* HSSegmentPage-dummy.m in Sources */,
+				E89CD6EC6AC8A741B341A8551D888DF6 /* HSSegmentPage-dummy.m in Sources */,
+				CB6D096DEBEF965E22118DEE2F5347D9 /* HSSegmentPageView.swift in Sources */,
+				27BB7FD351E697497A545B24FA76DA3D /* HSSegmentProperty.swift in Sources */,
+				45126985DD4EF5A1D9054DE6C6386D09 /* HSSegmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +294,7 @@
 		36514E588AF3216AA315D8BD94E54C4D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HSSegmentPage;
-			target = 8F41577ADAEDD7DE846009D7EA79CB9A /* HSSegmentPage */;
+			target = 445D154463D15720F84356C7E975625D /* HSSegmentPage */;
 			targetProxy = 3DF16E8ED722D709C287D6C865FFA3BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -450,41 +360,9 @@
 			};
 			name = Debug;
 		};
-		434B5BFCC99B30393F17F8328E35FC43 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D336B6871BA968F092113E868099E08B /* Pods-HSSegmentPage_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HSSegmentPage_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HSSegmentPage_Tests/Pods-HSSegmentPage_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HSSegmentPage_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		4E1B6123E871C4CE32A1D9EF9E06EF03 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 267F5EC9CCBF03D28F4B7D8F84183DD3 /* Pods-HSSegmentPage_Example.debug.xcconfig */;
+			baseConfigurationReference = B0B9A9529AFD94535CA2F45120055F9B /* Pods-HSSegmentPage_Example.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -571,44 +449,10 @@
 			};
 			name = Release;
 		};
-		8317DCC5DBD463DE34AC88267511F3DC /* Release */ = {
+		95C08A5A78988FB78D5AEB7227E59614 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EC02E107826F834F5E815D8AB51D110 /* HSSegmentPage.xcconfig */;
+			baseConfigurationReference = AD15BB45A087777AC6DFFD3D22DA4C30 /* HSSegmentPage.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HSSegmentPage/HSSegmentPage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HSSegmentPage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HSSegmentPage/HSSegmentPage.modulemap";
-				PRODUCT_NAME = HSSegmentPage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		84858728E9D273C86BABC0990C6FE43C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EC02E107826F834F5E815D8AB51D110 /* HSSegmentPage.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -638,7 +482,7 @@
 		};
 		A60947A56F29F20C5C9045FD49C4DCFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8839119AE2DF432AB77174E95C875CE7 /* Pods-HSSegmentPage_Example.release.xcconfig */;
+			baseConfigurationReference = 7178E9D7A44E924E65303B162BDBF6BD /* Pods-HSSegmentPage_Example.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -670,9 +514,9 @@
 			};
 			name = Release;
 		};
-		BBCC34B0AB629780C000D3D49309FCC9 /* Release */ = {
+		D38A46D46BF904AD88C6BCA6E127360A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D655BADA3FBACBC6093EB00249F34672 /* Pods-HSSegmentPage_Tests.release.xcconfig */;
+			baseConfigurationReference = AD15BB45A087777AC6DFFD3D22DA4C30 /* HSSegmentPage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -683,19 +527,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HSSegmentPage_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HSSegmentPage/HSSegmentPage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HSSegmentPage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HSSegmentPage_Tests/Pods-HSSegmentPage_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HSSegmentPage_Tests;
+				MODULEMAP_FILE = "Target Support Files/HSSegmentPage/HSSegmentPage.modulemap";
+				PRODUCT_NAME = HSSegmentPage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -724,20 +567,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A904C1DF94FA561000BE98E8EC72FCE6 /* Build configuration list for PBXNativeTarget "Pods-HSSegmentPage_Tests" */ = {
+		7BE72D77456394427E4F5D36E74B1A91 /* Build configuration list for PBXNativeTarget "HSSegmentPage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				434B5BFCC99B30393F17F8328E35FC43 /* Debug */,
-				BBCC34B0AB629780C000D3D49309FCC9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0A356F23D91F14B474F864DB8D4C4BA /* Build configuration list for PBXNativeTarget "HSSegmentPage" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84858728E9D273C86BABC0990C6FE43C /* Debug */,
-				8317DCC5DBD463DE34AC88267511F3DC /* Release */,
+				95C08A5A78988FB78D5AEB7227E59614 /* Debug */,
+				D38A46D46BF904AD88C6BCA6E127360A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
