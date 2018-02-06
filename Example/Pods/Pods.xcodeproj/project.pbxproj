@@ -17,6 +17,7 @@
 		A9B5CA63C8D3925C935AB1506EB0B778 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C05EAC7320245D8A008E463D /* HSSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EAC7220245D8A008E463D /* HSSegmentView.swift */; };
 		C05EAC7520245E53008E463D /* HSSegmentProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EAC7420245E53008E463D /* HSSegmentProperty.swift */; };
+		C0975B3A20282C4B001DF3DA /* HSSegmentPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0975B3920282C4B001DF3DA /* HSSegmentPageView.swift */; };
 		FEF5EB0EA6AFE8C6B356D87C6C722B5F /* Pods-HSSegmentPage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32112C7026CB3322BD81F6A59937FB89 /* Pods-HSSegmentPage_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		B66995D1E547485B862025EB7932CDF2 /* Pods-HSSegmentPage_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSSegmentPage_Tests-resources.sh"; sourceTree = "<group>"; };
 		C05EAC7220245D8A008E463D /* HSSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSSegmentView.swift; sourceTree = "<group>"; };
 		C05EAC7420245E53008E463D /* HSSegmentProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSSegmentProperty.swift; sourceTree = "<group>"; };
+		C0975B3920282C4B001DF3DA /* HSSegmentPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSSegmentPageView.swift; sourceTree = "<group>"; };
 		D0E88FB8D05610A09BD710BCC2A071E0 /* HSSegmentPage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSSegmentPage-dummy.m"; sourceTree = "<group>"; };
 		D1C815FEF573D01D1EA369CDC503910C /* Pods-HSSegmentPage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HSSegmentPage_Example.modulemap"; sourceTree = "<group>"; };
 		D336B6871BA968F092113E868099E08B /* Pods-HSSegmentPage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSSegmentPage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				C05EAC7220245D8A008E463D /* HSSegmentView.swift */,
 				C05EAC7420245E53008E463D /* HSSegmentProperty.swift */,
+				C0975B3920282C4B001DF3DA /* HSSegmentPageView.swift */,
 			);
 			name = Classes;
 			path = HSSegmentPage/Classes;
@@ -368,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0975B3A20282C4B001DF3DA /* HSSegmentPageView.swift in Sources */,
 				C05EAC7520245E53008E463D /* HSSegmentProperty.swift in Sources */,
 				C05EAC7320245D8A008E463D /* HSSegmentView.swift in Sources */,
 				A83226A529DB15F207F604AFE92BEEC7 /* HSSegmentPage-dummy.m in Sources */,

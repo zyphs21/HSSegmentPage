@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         
         addVYSegmentView()
         addVYSegmentView2()
+        addSegmentPageView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,5 +45,20 @@ extension ViewController {
         let segmentMenu = HSSegmentView(items: ["one","two","three","four","five","six","seven","eight","nine","ten"], property: property)
         view.addSubview(segmentMenu)
         segmentMenu.frame = CGRect(x: 0, y: 120, width: UIScreen.main.bounds.width, height: 44)
+    }
+    
+    func addSegmentPageView() {
+        let titleArray = ["one", "two", "three", "four"]
+        let vcBackgoundColors: [UIColor] = [.yellow, .blue, .green, .gray]
+        var viewControllerArray: [UIViewController] = []
+        for color in vcBackgoundColors {
+            let vc = UIViewController()
+            vc.view.backgroundColor = color
+            viewControllerArray.append(vc)
+        }
+        let style = HSSegmentProperty()
+        let pageView = HSSegmentPageView(frame: CGRect(x: 0, y: 165, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 165), segmentTitle: titleArray, viewControllers: viewControllerArray, style: style)
+        pageView.slidePageScrollViewToPosition(index: 0)
+        view.addSubview(pageView)
     }
 }
