@@ -1,7 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = 'HSSegmentPage'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of HSSegmentPage.'
+  s.version          = '0.1.1'
+  s.swift_version    = '4.0'
+  s.summary          = 'HSSegmentPage, provide customizable segment menu and segment pageview'
   s.homepage         = 'https://github.com/zyphs21/HSSegmentPage'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zyphs21' => 'hansenhs21@live.com' }

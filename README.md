@@ -24,6 +24,8 @@ pod 'HSSegmentPage'
 
 zyphs21, hansenhs21@live.com
 
+[my blog: myhanson.com](www.myhanson.com)
+
 ## License
 
 HSSegmentPage is available under the MIT license. See the LICENSE file for more info.
