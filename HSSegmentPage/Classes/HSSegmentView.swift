@@ -13,26 +13,26 @@ public protocol HSSegmentViewDelegate: class {
 
 public class HSSegmentView: UIControl {
     
-    weak var delegate: HSSegmentViewDelegate?
+    public weak var delegate: HSSegmentViewDelegate?
     
-    var property = HSSegmentProperty()
+    public var property = HSSegmentProperty()
     
     var items: [String] = [] {
         willSet { removeAllSegments() }
         didSet { insertAllSegments() }
     }
     
-    var numberOfSegments: Int {
+    public var numberOfSegments: Int {
         return items.count
     }
     
-    var selectedSegmentIndex: Int = 0 {
+    public var selectedSegmentIndex: Int = 0 {
         didSet {
             setSelected(forSegmentAt: selectedSegmentIndex, previousIndex: oldValue)
         }
     }
     
-    var defaltSelectedIndex: Int = 0
+    public var defaltSelectedIndex: Int = 0
     
     fileprivate var segmentsButtons: [UIButton] = []
     fileprivate(set) var segmentsContainerView: UIScrollView?

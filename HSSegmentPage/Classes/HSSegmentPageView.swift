@@ -11,8 +11,7 @@ import Foundation
 // MARK: - HSSegmentPageViewDelegate
 
 @objc public protocol HSSegmentPageViewDelegate: class {
-    @objc optional func editButtonClick(pageIndex: Int)
-    @objc optional func childeVCWillAppear(index: Int)
+    @objc optional func childeViewControllerWillAppear(index: Int)
     @objc optional func childViewControllerDidApppear(index: Int)
     @objc optional func childViewControllerWillDisapppear(index: Int)
     @objc optional func childViewControllerDidDisapppear(index: Int)
@@ -29,8 +28,6 @@ public class HSSegmentPageView: UIView {
     var segmentView: HSSegmentView!
     var pageScrollView: UIScrollView = UIScrollView()
     var bottomLine: UIView!
-    var searchButton: UIButton?
-    var editButton: UIButton?
     
     var style = HSSegmentProperty()
     var heightOfSegmentMenu: CGFloat = 44
@@ -63,13 +60,10 @@ public class HSSegmentPageView: UIView {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
-    // MARK: - Function
-    
-    
 }
 
+
+// MARK: - Function
 
 extension HSSegmentPageView {
     
@@ -96,10 +90,6 @@ extension HSSegmentPageView {
         pageScrollView.contentSize.width = CGFloat(viewControllerArray.count) * frame.width
         pageScrollView.contentSize.height = frame.height - style.segmentMenuHeight
         self.addSubview(pageScrollView)
-        
-//        bottomLine = UIView(frame: CGRect(x: 0, y: style.segmentMenuHeight - 0.5, width: frame.width, height: 0.5))
-//        bottomLine.backgroundColor = UIColor.black.withAlphaComponent(0.1)
-//        self.addSubview(bottomLine)
     }
     
     public func slidePageScrollViewToPosition(index: Int) {

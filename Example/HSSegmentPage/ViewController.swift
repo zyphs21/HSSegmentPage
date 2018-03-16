@@ -59,6 +59,7 @@ extension ViewController {
         let style = HSSegmentProperty()
         let pageView = HSSegmentPageView(frame: CGRect(x: 0, y: 165, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 165), segmentTitle: titleArray, viewControllers: viewControllerArray, style: style)
         pageView.slidePageScrollViewToPosition(index: 0)
+        
         view.addSubview(pageView)
     }
 }
