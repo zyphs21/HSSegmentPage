@@ -10,7 +10,7 @@ import Foundation
 public struct HSSegmentProperty {
     
     public var segmentMenuHeight: CGFloat = 44
-    public var gapInBothSide: CGFloat = 0 //44
+    public var gapInBothSide: CGFloat = 0
     public var segmentMenuBackgroundColor: UIColor = UIColor.black.withAlphaComponent(0.1)
     public var indicatorHeight: CGFloat = 2.5
     public var originalX: CGFloat = 4

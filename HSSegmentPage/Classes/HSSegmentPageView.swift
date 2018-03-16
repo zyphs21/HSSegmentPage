@@ -8,21 +8,9 @@
 import Foundation
 
 
-// MARK: - HSSegmentPageViewDelegate
-
-@objc public protocol HSSegmentPageViewDelegate: class {
-    @objc optional func childeViewControllerWillAppear(index: Int)
-    @objc optional func childViewControllerDidApppear(index: Int)
-    @objc optional func childViewControllerWillDisapppear(index: Int)
-    @objc optional func childViewControllerDidDisapppear(index: Int)
-}
-
-
 // MARK: - VYSlideSegmentView
 
 public class HSSegmentPageView: UIView {
-    
-    weak var delegate: HSSegmentPageViewDelegate?
     
     var menuBackgroundView: UIView = UIView()
     var segmentView: HSSegmentView!
@@ -32,7 +20,7 @@ public class HSSegmentPageView: UIView {
     var style = HSSegmentProperty()
     var heightOfSegmentMenu: CGFloat = 44
     
-    var frameWidthOfMenu: CGFloat {
+    var widthOfSegmentMenu: CGFloat {
         return frame.width - 2 * style.gapInBothSide
     }
 
@@ -74,7 +62,7 @@ extension HSSegmentPageView {
         self.addSubview(menuBackgroundView)
         
         segmentView = HSSegmentView(items: segmentTitle, property: style)
-        segmentView.frame = CGRect(x: style.gapInBothSide, y: 0, width: frameWidthOfMenu, height: style.segmentMenuHeight)
+        segmentView.frame = CGRect(x: style.gapInBothSide, y: 0, width: widthOfSegmentMenu, height: style.segmentMenuHeight)
         segmentView.backgroundColor = style.segmentMenuBackgroundColor
         segmentView.delegate = self
         segmentView.addTarget(self, action: #selector(onSegmentedControlValueChanged), for: .valueChanged)
