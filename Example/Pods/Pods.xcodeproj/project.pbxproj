@@ -29,31 +29,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		346CE8B64DBBF0ED17CDBAB656A863C4 /* HSSegmentPage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = HSSegmentPage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		346CE8B64DBBF0ED17CDBAB656A863C4 /* HSSegmentPage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HSSegmentPage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3FB8E3FBC1BE65A548A844149E9CACCB /* Pods-HSSegmentPage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSSegmentPage_Example-dummy.m"; sourceTree = "<group>"; };
 		411E0D0358878B013CF0FC6454509199 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		460E6DB37E0192B185AE4BE9810D9776 /* Pods-HSSegmentPage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HSSegmentPage_Example-umbrella.h"; sourceTree = "<group>"; };
 		49A3FE5D26619DE32E89A19CB0BB3AE0 /* HSSegmentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSSegmentView.swift; path = HSSegmentPage/Classes/HSSegmentView.swift; sourceTree = "<group>"; };
 		5131F432DA707376DFD1BD8D35AFC8D0 /* Pods-HSSegmentPage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSSegmentPage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5550C314A8096F42FF8280987873DB33 /* Pods-HSSegmentPage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSSegmentPage_Example-resources.sh"; sourceTree = "<group>"; };
-		654B495F603355719283D89A28E749EB /* HSSegmentPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HSSegmentPage.framework; path = HSSegmentPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		654B495F603355719283D89A28E749EB /* HSSegmentPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSSegmentPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7178E9D7A44E924E65303B162BDBF6BD /* Pods-HSSegmentPage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSSegmentPage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		79B96123F062C30DBA42FBF71E2A9FDD /* HSSegmentPage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSSegmentPage-prefix.pch"; sourceTree = "<group>"; };
 		79CB73E8A444320CBA74923D0EB626BB /* HSSegmentProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSSegmentProperty.swift; path = HSSegmentPage/Classes/HSSegmentProperty.swift; sourceTree = "<group>"; };
 		889AA30A460265BBA54546CE1D627C21 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9ACEF5C6FA555691017341B86FC2857C /* HSSegmentPageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSSegmentPageView.swift; path = HSSegmentPage/Classes/HSSegmentPageView.swift; sourceTree = "<group>"; };
 		9FF024C91974D577042A5D14EFF25A64 /* HSSegmentPage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSSegmentPage-umbrella.h"; sourceTree = "<group>"; };
 		A7DE759ED3AD0369FE7315D002AC8E73 /* Pods-HSSegmentPage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSSegmentPage_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AD15BB45A087777AC6DFFD3D22DA4C30 /* HSSegmentPage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSSegmentPage.xcconfig; sourceTree = "<group>"; };
 		B0B9A9529AFD94535CA2F45120055F9B /* Pods-HSSegmentPage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSSegmentPage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B18210AEE9B142BE804C35F2B48C595B /* HSSegmentPage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSSegmentPage-dummy.m"; sourceTree = "<group>"; };
-		BAA915503560DA1112562A9C802149D9 /* HSSegmentPage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HSSegmentPage.modulemap; sourceTree = "<group>"; };
-		C18A90FB7B39DC0083FD7BE0337314EF /* Pods-HSSegmentPage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HSSegmentPage_Example.modulemap"; sourceTree = "<group>"; };
-		CA0C6968141C2ED6CCE9D206ECB5C6DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		DE6C232F43FFAAD8949B65BCD14CA710 /* Pods_HSSegmentPage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HSSegmentPage_Example.framework; path = "Pods-HSSegmentPage_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E534551CA3665C97CD1237B364221AD9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BAA915503560DA1112562A9C802149D9 /* HSSegmentPage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HSSegmentPage.modulemap; sourceTree = "<group>"; };
+		C18A90FB7B39DC0083FD7BE0337314EF /* Pods-HSSegmentPage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HSSegmentPage_Example.modulemap"; sourceTree = "<group>"; };
+		CA0C6968141C2ED6CCE9D206ECB5C6DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DE6C232F43FFAAD8949B65BCD14CA710 /* Pods_HSSegmentPage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSSegmentPage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E534551CA3665C97CD1237B364221AD9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F2A2616A3772E66040042CEE0DF18B35 /* Pods-HSSegmentPage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HSSegmentPage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,7 +248,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -314,6 +314,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -321,6 +322,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -408,6 +410,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -415,6 +418,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
